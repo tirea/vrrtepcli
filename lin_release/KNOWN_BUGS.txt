@@ -1,0 +1,6 @@
+* repeat looping doesn't ask for more words when given less words than user-defined int x (vrrtepcli x word word ....word)
+* when given more words than one, it takes the last one, not the first
+* words which appear to be affixed (e.g. tswayon, zerok, tìng, etc.) are broken down too far. (e.g. tìpängkxo -> pkxo)
+	MOST of these instances have been hacked as they come up, but more remain to be hacked.
+* vrrtep analytics is slow and very buggy (vrrtepcli -g)
+Please report any bugs to tirea@learnnavi.org 

@@ -1,0 +1,2 @@
+fix bugs having to do with verbs whose root forms appear to have infxes
+fix the update all script to include Russian dictionary, and fix all the links there

@@ -1,0 +1,7 @@
+* repeat looping doesn't ask for more words when given less words than user-defined int x (vrrtepcli x word word ....word)
+* repeat looping only takes the first x words (where x is the int user defines) and then just grabs the last word, when given more words than x.
+* when given more words than one, it takes the last one, not the first
+*Still some Unicode issues with IPA and other Non-English languages.
+
+
+Please report any bugs to tirea@learnnavi.org

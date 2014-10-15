@@ -1,0 +1,103 @@
+﻿v1.95.0 (Windows)
+* Dictionaries now use tab-seperated fields.
+* Dictionary updated
+
+v1.94.2
+* Bugfix: Pressing ^C no longer crashes scramble
+
+v1.94.1
+* Program can update itself. Run vrrtepcli -u --all
+* Get infix positions from Na'vi word. Commands like "vrrtepcli -i yom" are now supported
+* High scores are saved for scramble and quiz.
+* Dictionary updated
+
+v1.94
+* -s / -q and -n are now mutually exclusive
+* New menu for those who wish to use the program from explorer. Run vcli_menu.cmd
+* Bug fixes...and lots of 'em
+* Argument looping now works correctly
+* Dictionary updated
+* Cleaned up documentation
+
+v1.93
+* Can be installed for all users (see README for details, especially Vista/7/8 users who have UAC enabled)
+* Dictionary updated
+* Revised README
+* Practically rewrote the installer (result of adding "all users" feature)
+
+v1.92
+* Fixed updater to correctly download Estonian file. (sorry, Kala xD)
+* Added -v flag to check dictionary version
+
+v1.91
+* Repeat looping now works on command line.
+
+v1.9
+* Changed game score system to fraction and percent
+* Screen clearing on games
+* Updated -h output
+* Fixed looping in -l direction (does not include cl args)
+* Changed filepaths to relative
+* Remove repeat options from quiz game
+* Updated filepaths to be relative. for real.
+* Updated score system on scramble.
+* New list scrambling algorithm in scramble game(suggested by Kä'eng)
+* Temporarily disabled infix and prefix support
+* Now case insensitive
+* Scramble no longer repeats question
+* Show correct answers after answering incorrectly
+
+v1.8
+* Fixed ctrl-D and ctrl-C error messages; they now can be used to quit.
+* Cross-platform thanks to Swoka Ikran (added .cmd files and wget.exe)
+* Better Unicode support in backend, Swoka Ikran
+* Updated readme
+
+THE BELOW APPLIES TO THE LINUX VERSION ONLY.
+
+v1.7
+* Added Na'vi word scramble game
+* Updated Known Bugs list. pxasìk.
+* Updated readme
+* Put -h protips in readme
+* Updated TODO
+* Fixed no word bug in rhyming dict
+* Added Na'vi quiz game
+* Updated dictionary files
+* Updated license file, added headers to all source code files
+
+v1.6
+* Added multiple word argument support...for Na'vi -->local direction only...for now
+* Added rhyming dictionary function
+* Changed author name in greet line
+* Uninstall script takes care of the .bashrc line
+* Doubled rhyme.py as both rhyme searcher and rhyme dictionary generator for both txt and html
+* Clarified license scope in README
+
+v1.5
+* Improved searching algorithm to return only most relevant results in -l --> -n direction
+* Changed install.sh to cater better for those without sudo/root access
+* Installing, uninstalling, and updating no longer require root access
+* Edited README
+
+v1.4:
+* Improved -h response
+* Intro prompt now displays when using [word] argument
+* Added update script and -u option.
+* Updated install and uninstall scripts accordingly
+* Updated README
+* Updated version numbers for consistency
+* Updated file location, ~/.vrrtepcli
+
+v1.3:
+* Fixed it asking you how many times to iterate
+* Added numerical argument to take care of taht if necessary
+
+v1.2:
+* Fixed file opening error for real this time
+
+v1.1:
+* Fixed file opening error
+
+v1.0:
+* Original release

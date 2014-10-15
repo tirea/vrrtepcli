@@ -1,0 +1,153 @@
+v2.1 [BETA]
+vrrtepcli.sh:
+	Make version number consecutive
+	Remove support for ptbr language (Database has been empty for while)
+vrrtepcli.py:
+	Remove support for ptbr language (Database has been empty for while)
+vrrtepcli_update.sh:
+	Fixed a bug with updating dictionaries
+raw.py:
+	removed as was unnecessary
+other:
+	Updated stock dictionaries
+	added all necessary contents to lin_release
+
+v2.0 [BETA]
+vrrtepcli.py:
+	fixed ^D NameError
+	now recognizes most affixes
+	now recognizes lenition
+	bug fixed: -n -ipa <nonexistent word>
+vrrtepcli.sh:
+	re-added info line
+added:
+	grammar.py
+	root.py
+new commands:
+	-g [-sent="<string>"]
+edited README
+updated dicts
+looping fixed
+
+v1.942
+vrrtepcli.py:
+	fixed ^D bug in scramble game
+	fixed vrrtepcli -n -s
+
+v1.941
+vrrtepcli.py:
+    fixed ^C bug in scramble game
+
+v1.94
+vrrtepcli.sh:
+    update to 1.94
+    updated -h
+scramble.py:
+    save scores and high scores
+scramble.py:
+    save scores and high scores
+vrrtepcli_update.sh:
+    able to update dicts OR upgrade whole program
+    new option -u --all to upgrade program
+vrrtepcli_update-all.sh:
+    a new script called from vrrtepcli.sh to upgrade the pragram and dictionaries.
+vrrtepcli.py:
+    added two new functions, to enable users to grab both or either infix positions and IPA from Na'vi INPUT
+updated README
+
+v1.93
+vrrtepcli.sh:
+    removed title and help-line if an argument is passed.
+    removed "by Tirea Aean" in title/help line
+scramble.py:
+    some comments added, nothing big.
+install.sh:
+    detect if root user is installing, if so, allow installdir choice.
+    use move command for installing instead of copy
+uninstall.sh:
+    detect if root user is uninstalling, if so, uninstall from custom dir
+vrrtepcli.sh:
+    now able to run from any dir (which the root user installed it to)
+rhyme.py:
+    removed generator script codeblock
+Updated dictionaries
+vrrtepcli_update.sh:
+    detect if root user is updating, if so, update accordingly
+Updated README.txt
+Updated install/uninstal/update errors, all good now.
+Bug fixes
+
+v1.92
+Fixed updater to correctly download Estonian file. (sorry, Kala xD)
+Added -v flag to check dictionary version
+
+v1.91
+repeat looping now works on command line.
+
+v1.9
+changed game score system to fraction and percent
+screen clearing on games
+updated -h output
+fixed looping in -l direction (does not include cl args)
+changed filepaths to relative
+rid quiz game of repeat options
+updated filepaths to be relative. for real.
+updated score system on scramble.
+new list scrambling algorithm in scramble game(suggested by Kä'eng)
+temporarily disabled infix and prefix support
+now case insensitive
+scramble no longer repeats question
+show correct answers after answering incorrectly
+
+v1.8
+fixed ctrl-D and ctrl-C error messages; they now can be used to quit.
+Cross-platform thanks to Swoka Ikran (added .cmd files and wget.exe)
+Better Unicode support in backend, Swoka Ikran
+Updated readme
+
+v1.7
+added Na'vi word scramble game
+updated Known Bugs list. pxasìk.
+updated readme
+put -h protips in readme
+updated TODO
+fixed no word bug in rhyming dict
+added Na'vi quiz game
+updated dictionary files
+updated license file, added headers to all source code files
+
+v1.6
+added multiple word argument support...for Na'vi -->local direction only...for now
+!!added rhyming dictionary function
+Changed author name in greet line
+Uninstall script takes care of the .bashrc line
+Doubled rhyme.py as both rhyme searcher and rhyme dictionary generator for both txt and html
+clarified license scope in README
+
+v1.5
+improved searching algorithm to return only most relevant results in -l --> -n direction
+changed install.sh to cater better for those without sudo/root access
+installing, uninstalling, and updating no longer require root access
+edited README, this program is very easy now.
+
+v1.4:
+improved -h response
+intro prompt now displays when using [word] argument
+added update script and -u option.
+updated install and uninstall scripts accordingly
+updated README
+updated version numbers for consistency
+updated file location, ~/.vrrtepcli
+
+v1.3:
+fixed it asking you how many times to iterate
+added numerical argument to take care of taht if necessary
+
+v1.2:
+fixed file opening error for real this time
+
+v1.1:
+fixed file opening error
+
+v1.0:
+original release

@@ -1,0 +1,3 @@
+>>>fix bugs: 
+>>>prefixe recognition
+>>>suffixes/enclitic adposition recognition
