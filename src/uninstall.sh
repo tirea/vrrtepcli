@@ -20,7 +20,7 @@ sed -i".bak" '$d' ~/.bashrc
 echo "vrrtepcli successfully uninstalled."
 else #user is root, uninstall from custom dir
 DIR="$( cd "$( dirname "$0" )" && pwd )"
-rm $DIR/vrrtepcli.sh $DIR/install.sh $DIR/uninstall.sh $DIR/vrrtepcli_update.sh $DIR/vrrtepcli.py $DIR/localizedWords.txt $DIR/metaWords.txt $DIR/naviwords.txt $DIR/de.txt $DIR/est.txt $DIR/eng.txt $DIR/hu.txt $DIR/nl.txt $DIR/ptbr.txt $DIR/sv.txt $DIR/dictversion.txt $DIR/scramble.py $DIR/rhyme.py $DIR/quiz.py $DIR/quiz.pyc $DIR/rhyme.pyc $DIR/scramble.pyc
+rm $DIR/vrrtepcli.sh $DIR/install.sh $DIR/uninstall.sh $DIR/vrrtepcli_update.sh $DIR/vrrtepcli.py $DIR/localizedWords.txt $DIR/metaWords.txt $DIR/naviwords.txt $DIR/de.txt $DIR/est.txt $DIR/eng.txt $DIR/hu.txt $DIR/nl.txt $DIR/sv.txt $DIR/dictversion.txt $DIR/scramble.py $DIR/rhyme.py $DIR/quiz.py $DIR/quiz.pyc $DIR/rhyme.pyc $DIR/scramble.pyc
 rm /usr/bin/vrrtepcli
 echo "vrrtepcli successfully uninstalled."
 fi

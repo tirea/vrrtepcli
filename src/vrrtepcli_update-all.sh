@@ -23,7 +23,6 @@ rm -f ~/.vrrtepcli/eng.txt
 rm -f ~/.vrrtepcli/est.txt
 rm -f ~/.vrrtepcli/hu.txt
 rm -f ~/.vrrtepcli/nl.txt
-rm -f ~/.vrrtepcli/ptbr.txt
 rm -f ~/.vrrtepcli/sv.txt
 rm -f ~/.vrrtepcli/dictversion.txt
 rm -f ~/.vrrtepcli/root.py
@@ -49,10 +48,9 @@ wget http://tirea.learnnavi.org/source/eng.txt
 wget http://tirea.learnnavi.org/source/est.txt
 wget http://tirea.learnnavi.org/source/hu.txt
 wget http://tirea.learnnavi.org/source/nl.txt
-wget http://tirea.learnnavi.org/source/ptbr.txt
 wget http://tirea.learnnavi.org/source/sv.txt
 wget http://tirea.learnnavi.org/source/dictversion.txt
-mv localizedWords.txt metaWords.txt naviwords.txt de.txt eng.txt est.txt hu.txt nl.txt ptbr.txt sv.txt dictversion.txt ~/.vrrtepcli/
+mv localizedWords.txt metaWords.txt naviwords.txt de.txt eng.txt est.txt hu.txt nl.txt sv.txt dictversion.txt ~/.vrrtepcli/
 mv vrrtepcli.sh vrrtepcli.py quiz.py rhyme.py scramble.py install.sh uninstall.sh vrrtepcli_update.sh vrrtepcli_update-all.sh root.py grammar.py ~/.vrrtepcli
 else #user is root, update accordingly
 DIR="$( cd "$( dirname "$0" )" && pwd )"
@@ -64,7 +62,6 @@ rm -f $DIR/eng.txt
 rm -f $DIR/est.txt
 rm -f $DIR/hu.txt
 rm -f $DIR/nl.txt
-rm -f $DIR/ptbr.txt
 rm -f $DIR/sv.txt
 rm -f $DIR/dictversion.txt
 rm -f $DIR/root.py
@@ -90,9 +87,8 @@ wget http://tirea.learnnavi.org/source/eng.txt
 wget http://tirea.learnnavi.org/source/est.txt
 wget http://tirea.learnnavi.org/source/hu.txt
 wget http://tirea.learnnavi.org/source/nl.txt
-wget http://tirea.learnnavi.org/source/ptbr.txt
 wget http://tirea.learnnavi.org/source/sv.txt
 wget http://tirea.learnnavi.org/source/dictversion.txt
-mv localizedWords.txt metaWords.txt naviwords.txt de.txt eng.txt est.txt hu.txt nl.txt ptbr.txt sv.txt dictversion.txt root.py grammar.py $DIR
+mv localizedWords.txt metaWords.txt naviwords.txt de.txt eng.txt est.txt hu.txt nl.txt sv.txt dictversion.txt root.py grammar.py $DIR
 mv vrrtepcli.sh vrrtepcli.py quiz.py rhyme.py scramble.py install.sh uninstall.sh vrrtepcli_update.sh vrrtepcli_update-all.sh root.py grammar.py $DIR
 fi
