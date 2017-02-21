@@ -48,7 +48,7 @@ else
 fi
 
 # List of files to download and update
-files="localizedWords.txt metaWords.txt naviwords.txt de.txt eng.txt est.txt hu.txt nl.txt ptbr.txt sv.txt ru.txt dictversion.txt"
+files="localizedWords.txt metaWords.txt naviwords.txt de.txt eng.txt est.txt hu.txt nl.txt sv.txt ru.txt dictversion.txt"
 
 tmpdir=$(mktemp --tmpdir -d vrrtepcli.XXXXXXXXXX)
 

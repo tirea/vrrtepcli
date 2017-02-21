@@ -17,7 +17,7 @@ if [ "$(id -u)" != "0" ]; then
    #if not root, install everything in ~/.vrrtepcli and make an alias in ~/.bashrc
    mkdir ~/.vrrtepcli
    chmod a+rw ~/.vrrtepcli
-   mv vrrtepcli.sh uninstall.sh vrrtepcli_update.sh vrrtepcli_update-all.sh vrrtepcli.py localizedWords.txt metaWords.txt naviwords.txt de.txt est.txt eng.txt hu.txt nl.txt ptbr.txt sv.txt ru.txt dictversion.txt scramble.py rhyme.py quiz.py root.py grammar.py ~/.vrrtepcli
+   mv vrrtepcli.sh uninstall.sh vrrtepcli_update.sh vrrtepcli_update-all.sh vrrtepcli.py localizedWords.txt metaWords.txt naviwords.txt de.txt est.txt eng.txt hu.txt nl.txt sv.txt ru.txt dictversion.txt scramble.py rhyme.py quiz.py root.py grammar.py ~/.vrrtepcli
    echo "alias vrrtepcli='~/.vrrtepcli/vrrtepcli.sh'" >> ~/.bashrc
    echo "vrrtepcli successfully installed to home folder."
    echo "please restart bash or open a new terminal, and then update by running vrrtepcli -u"
@@ -27,9 +27,9 @@ else
    read FILEPATH
    if [ ! -d "$FILEPATH" ]; then
       mkdir $FILEPATH
-      mv vrrtepcli.sh install.sh uninstall.sh vrrtepcli_update.sh vrrtepcli.py localizedWords.txt metaWords.txt naviwords.txt de.txt est.txt eng.txt hu.txt nl.txt ptbr.txt sv.txt dictversion.txt scramble.py rhyme.py quiz.py root.py grammar.py $FILEPATH
+      mv vrrtepcli.sh install.sh uninstall.sh vrrtepcli_update.sh vrrtepcli.py localizedWords.txt metaWords.txt naviwords.txt de.txt est.txt eng.txt hu.txt nl.txt sv.txt dictversion.txt scramble.py rhyme.py quiz.py root.py grammar.py $FILEPATH
    else
-   mv vrrtepcli.sh uninstall.sh vrrtepcli_update.sh vrrtepcli_update-all.sh vrrtepcli.py localizedWords.txt metaWords.txt naviwords.txt de.txt est.txt eng.txt hu.txt nl.txt ptbr.txt sv.txt ru.txt dictversion.txt scramble.py rhyme.py quiz.py root.py grammar.py $FILEPATH
+   mv vrrtepcli.sh uninstall.sh vrrtepcli_update.sh vrrtepcli_update-all.sh vrrtepcli.py localizedWords.txt metaWords.txt naviwords.txt de.txt est.txt eng.txt hu.txt nl.txt sv.txt ru.txt dictversion.txt scramble.py rhyme.py quiz.py root.py grammar.py $FILEPATH
    fi
    echo $FILEPATH/vrrtepcli.sh \$@ >> /usr/bin/vrrtepcli
    chmod +x /usr/bin/vrrtepcli
