@@ -28,9 +28,9 @@ fi
 ###curl/wget bug fix by Tsyesika###
 # Checks if wget or curl is here
 if [ "`which wget 2>/dev/null`" != "" ]; then
-	alias prog="wget $wget_opts"
+	prog="wget $wget_opts"
 elif [ "`which curl 2>/dev/null`" != "" ]; then
-	alias prog="curl $curl_opts -O"
+	prog="curl $curl_opts -O"
 else
 	echo "Failed to update - you need curl or wget" >&2
 	exit 1
@@ -57,7 +57,8 @@ trap 'e=$?; rm -rf $tmpdir; exit $e' EXIT
 # Temporarily switch to the tmpdir for the download
 pushd $tmpdir >/dev/null
 for file in $files; do
-	prog "http://tirea.learnnavi.org/dictionarydata/$file"
+	###curl/wget bug fix fix by Tirea Aean (you forgot dollar sign on prog here) ###
+	$prog "http://tirea.learnnavi.org/dictionarydata/$file"
 	#If the above line does not work for some reason, then just replace prog with either wget or curl explicitly. Had to do this on my Samsung Chromebook running Ubuntu via Crouton
 done
 popd >/dev/null
